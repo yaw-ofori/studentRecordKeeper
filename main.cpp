@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <string>
 
 using namespace std;
@@ -44,6 +44,7 @@ void registerStudent(student& s)
     cin >> s.level;
     cout << "Current Semester: " << endl;
     cout << ">> ";
+    cin.ignore(3);
     cin >> s.semeseter;
     
     for (int i = 0; i < MAX_NUM_OF_COURSES; i++)
